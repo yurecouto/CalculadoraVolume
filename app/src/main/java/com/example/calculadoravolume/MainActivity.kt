@@ -120,28 +120,28 @@ fun Calculadora() {
                 // Nessa row temos os botões de margem
                 Row {
                     Button(
-                        onClick = { porcentagem(valorA, valorB, 1.05) },
+                        onClick = { resultado = porcentagem(valorA, valorB, 1.05) },
                         modifier = Modifier
                             .width(80.dp),
                     ){ Text(text = "+ 5%") }
 
                     Spacer( modifier = Modifier.width(10.dp) )
                     Button(
-                        onClick = { porcentagem(valorA, valorB, 1.10) },
+                        onClick = { resultado = porcentagem(valorA, valorB, 1.10) },
                         modifier = Modifier
                             .width(80.dp),
                     ){ Text(text = "+ 10%") }
 
                     Spacer( modifier = Modifier.width(10.dp) )
                     Button(
-                        onClick = { porcentagem(valorA, valorB, 1.15) },
+                        onClick = { resultado = porcentagem(valorA, valorB, 1.15) },
                         modifier = Modifier
                             .width(80.dp),
                     ){ Text(text = "+ 15%") }
 
                     Spacer( modifier = Modifier.width(10.dp) )
                     Button(
-                        onClick = { porcentagem(valorA, valorB, 1.20) },
+                        onClick = { resultado = porcentagem(valorA, valorB, 1.20) },
                         modifier = Modifier
                             .width(82.dp),
                     ){ Text(text = "+ 20%") }
